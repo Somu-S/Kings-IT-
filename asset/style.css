@@ -52,6 +52,9 @@ nav{
     border-radius: 1rem;
     font-size: 1.2rem;
 }
+.search-field:hover{
+    border: .1rem solid #F8B342;
+}
 .fa-house{
     color: #F8B342;
     font-size: 1.6rem;
@@ -64,7 +67,6 @@ main{
 }
 main h1{
     font-size: 3.5rem;
-    color: #3D2C11;
 }
 .banner-img img{
     height: auto;
@@ -78,10 +80,11 @@ main h1{
     color: #F8B342;
 }
 .banner-content p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .b-title{
     font-size: 1.4rem;
+    font-weight: bold;
 }
 .banner-content input{
     font-size: 1rem;
@@ -188,8 +191,8 @@ main h1{
 .ab-card-wra{
     margin: 1rem 0;
 }
-.ab-card p{
-    font-size: 1rem;
+.about-content p{
+    font-size: 1.2rem;
     margin: 0;
     width: 80%;
 }
@@ -217,6 +220,7 @@ main h1{
 .ab-name div{
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
 }
 .ab-name{
     display: flex;
@@ -772,31 +776,59 @@ footer{
 
 
 /* contact us starts here */
-.contact-icon img{
-    height: 5rem;
+.contact-banner{
+    background-image: url(./photosrc/contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
 }
-.contact-title{
-    font-size: 1.6rem;
-    font-weight: 600;
+.c-banner-title,.contact-banner p{
+    color: white;
+    font-size: 3.2rem;
+    margin: auto;
+    width: fit-content;
+    color: white;
+    font-weight: 500;
+}
+.contact-banner a{
+    text-decoration: none;
+    color: white;
+}
+.contact-banner a:hover{
+    color: #00DCA2;
+}
+.contact-banner p{
+    font-size: 1.2rem;
+    color: white
+}
+
+.contact-icon img{
+    height: 3rem;
 }
 .contact-header{
     font-size: 3.2rem;
+    font-weight: bold;
+}
+.contact-card-wrapper{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
 }
 .contact-content-wrapper{
     display: flex;
     padding: 4rem;
-    justify-content: space-between;
 }
 .contact-title{
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #504538;
 }
 .contact-content p{
     font-size: 1.2rem;
-}
-.contact-content{
-    max-width: 40%;
 }
 .contact-card span{
     font-size: 1.4rem;
@@ -814,18 +846,124 @@ footer{
     gap: 1rem;
     border-top: .2rem solid black;
     border-radius: .4rem;
-    /* background-color: red; */
     box-shadow: .2rem .2rem .2rem .3rem rgb(237, 231, 231);
+    padding: 4rem;
 }
-.contact-card:hover{
+.contact-card:hover {
     background-color: #00DCA2;
     transition: 0.3s;
 }
 .contact-form-container{
     display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+.contact-img img{
+    height: 60rem;
+}
+.c-form-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    gap: .5rem;
+    color: #504538;
+}
+.c-form-title i,.contact-title i{
+    background-color: #F8B342;
+    height: .2rem;
+    width: 3rem;
+}
+.c-form-header{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.c-form-header span,.contact-header span{
+    color: #F8B342;
+}
+.input-ctrl{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+.input-ctrl input,.submit-btn button{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    outline:none;
+    background-color: transparent;
+    width: 100%;
+    border: .1rem solid gray;
+    border-radius: .4rem;
+}
+.input-ctrl input:hover,textarea:hover{
+    border: .1rem solid #F8B342;
+}
+.contact-form{
+    padding: 2rem;
+}
+.input-ctrl textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 20rem;
+    color: gray;
+    outline: none;
+}
+.submit-btn button:hover{
+    background-color: #00DCA2;
+    border: none;
+    transition: 0.3s;
+}
+.contact-media{
+    margin: 1rem 0;
+    color: #F8B342;
 }
 
-
+/* web dev page starts here */
+.web-pg-img img{
+    height: 30rem;
+}
+.feature-card img{
+    height: 5rem;
+}
+.features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 5rem 10rem;
+}
+.feature-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.feature-title i{
+    background-color: #F8B342;
+    width: 4rem;
+}
+.feature-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem 4rem;
+}
+.feature-card{
+    display: flex;
+    gap: 1rem;
+}
+.fea-txt p{
+    font-size: 1rem;
+    color: #3D2C11;
+}
+.fea-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 
 @media (max-width:768px){
@@ -838,7 +976,7 @@ footer{
     .btn{
         display: block;
     }
-    .about-us,.our-work,.abt-pg-main{
+    .about-us,.our-work,.abt-pg-main,.contact-form-container{
         flex-direction: column;
     }
     .recent-project{
@@ -859,6 +997,12 @@ footer{
     .f-row{
         max-width: 90%;
     }
+    .contact-content-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
 
 }
 @media (min-width:481px) and (max-width:768px){
@@ -870,6 +1014,9 @@ footer{
     }
     .blog-container{
         grid-template-columns: auto auto auto;
+    }
+    .contact-content-wrapper{
+        display: flex;
     }
 }
 @media (min-width:769px) and (max-width:1024px){
