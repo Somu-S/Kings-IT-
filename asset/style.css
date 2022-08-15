@@ -25,12 +25,18 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
+    background-color: white;
+    /* position: fixed; */
+    width: 100%;
 }
 .nav-ul{
     gap: 4rem;
     font-size: 1.2rem;
 }
 .nav-ul a:hover{
+    color: #F8B342;
+}
+.active{
     color: #F8B342;
 }
 .nav-ul a{
@@ -43,11 +49,11 @@ nav{
     font-size: 1rem;
 }
 .search-field{
-    border: 0.1rem solid black;
+    border: 0.2rem solid #F8B342;
     display: flex;
     align-items: center;
     width: 15rem;
-    padding: .3rem;
+    padding: .5rem;
     gap: .2rem;
     border-radius: 1rem;
     font-size: 1.2rem;
@@ -56,14 +62,15 @@ nav{
     border: .1rem solid #F8B342;
 }
 .fa-house{
-    color: #F8B342;
     font-size: 1.6rem;
 }
+
 main{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 4rem;
+    margin: 8rem 0;
 }
 main h1{
     font-size: 3.5rem;
@@ -133,6 +140,7 @@ main h1{
     background-color: #F8B342;
     color: white;
     cursor: pointer;
+    transition: .5s;
 }
 .sidepanel {
     width: 0;
@@ -177,19 +185,22 @@ main h1{
     display: flex;
     padding: 4rem 6rem;
     align-items: center;
-    background-color: rgba(248, 179, 66, 0.47);
+    background-color: black;
     margin: 4rem 0;
 }
 .about-h{
     font-size: 3.2rem;
     font-weight: bold;
+    color: white;
 }
 .about-us p{
     font-size: 1.2rem;
     margin: 1rem 0;
+    color: white;
 }
 .ab-card-wra{
     margin: 1rem 0;
+    color: #F8B342;
 }
 .about-content p{
     font-size: 1.2rem;
@@ -288,8 +299,9 @@ main h1{
     max-width: 40rem;
 }
 .ser-card:hover{
-    background-color: #F8B342;
-    transition: 0.3s;
+    background-image: linear-gradient(to right top, #f8b342, #d68643, #ab5f41, #794038, #462628, #462628, #462628, #462628, #794038, #ab5f41, #d68643, #f8b342);
+    transition: .5s;
+    color: white;
     border-radius: .5rem;
 }
 .ser-cards-container{
@@ -316,7 +328,7 @@ main h1{
     display: flex;
     justify-content: space-between;
     padding: 6rem;
-    background-color: rgba(248, 179, 66, 0.47);
+    background-color: black;
     align-items: center;
     align-items: center;
     margin: 4rem 0;
@@ -329,19 +341,25 @@ main h1{
     color: #F8B342;
     gap: .4rem;
 }
+.rec-title i{
+    background-color: #F8B342;
+}
 .rec-header{
     font-size: 3.2rem;
     font-weight: bold;
+    color: white;
 }
 .rec-header span{
     color: #F8B342;
 }
 .rec-content{
     max-width: 30rem;
+    color: white;
 }
 .rec-content p{
     font-size: 1.2rem;
     margin-top: 1rem;
+    color: white;
 }
 
 /* our work starts here */
@@ -389,7 +407,7 @@ main h1{
 
 /* industries starts here */
 .industries{
-    background-color: rgba(248, 179, 66, 0.47);
+    background-color: black;
     padding: 6rem;
     margin: 4rem 0;
 }
@@ -397,15 +415,17 @@ main h1{
     font-size: 1.2rem;
     max-width: 70%;
     text-align: center;
+    color: white;
 }
 .industries,.ind{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 .ind-title{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #F8B342;
     font-weight: bold;
 }
@@ -521,12 +541,14 @@ main h1{
     flex-direction: column;
     align-items: center;
     padding: 6rem;
-    background-color: rgba(248, 179, 66, 0.47);
+    background-color: black;
     margin: 4rem 0;
+    color: white;
 }
 .tes-comment{
     font-size: 1.2rem;
     text-align: justify;
+    color: white;
 }
 .tes-card-container{
     display: grid;
@@ -539,9 +561,18 @@ main h1{
     color: #F8B342;
 }
 .shadow{
-    background-color: white;
+    background-color: #F8B342;
     box-shadow: .4rem .4rem .4rem rgba(0, 0, 0, 0.25);
+    color: black;
 }
+.shadow .tes-name{
+    color: white;
+}
+.shadow .tes-comment{
+    color: black;
+}
+
+
 
 /* solve your it needs starts here */
 .itneed{
@@ -642,10 +673,11 @@ main h1{
     flex-direction: column;
     gap: 1rem;
     font-size: 1.2rem;
+    color: white;
 }
 footer a,.footer-abt{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.2rem;
 }
 footer a:hover{
@@ -656,7 +688,7 @@ footer li{
 }
 footer{
     padding: 8rem 8rem 2rem 8rem;
-    background-color: rgba(248, 179, 66, 0.47);
+    background-color: black;
 }
 .footer-container{
     display: flex;
@@ -668,6 +700,7 @@ footer{
 .li-head{
     font-size: 1.4rem;
     font-weight: 600;
+    color: #F8B342;
 }
 .sec-row li i{
     margin-right: .2rem;
@@ -677,9 +710,10 @@ footer{
     border: none;
     outline: none;
     font-size: 1rem;
+    color: white;
 }
 .f-email{
-    border: .1rem solid black;
+    border: .1rem solid #F8B342;
     padding: .5rem;
     border-radius: .4rem;
     width: fit-content;
@@ -694,6 +728,7 @@ footer{
 .copywright{
     margin-top: 6rem;
     font-size: 1rem;
+    color: white;
 }
 
 /* home page ends here */
@@ -784,14 +819,13 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 8rem;
+    padding: 12rem 0 6rem;
 }
 .c-banner-title,.contact-banner p{
     color: white;
     font-size: 3.2rem;
     margin: auto;
     width: fit-content;
-    color: white;
     font-weight: 500;
 }
 .contact-banner a{
@@ -940,7 +974,7 @@ footer{
     padding: 5rem 10rem;
 }
 .feature-title{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -972,7 +1006,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     padding: 4rem;
 }
 .web-card img{
@@ -1005,7 +1038,57 @@ footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 2rem;
+    padding: 2rem;
 }
+.margin-for-services-pg{
+    margin-top: 4rem;
+}
+
+
+.recent-pr-he{
+    font-size: 2.8rem;
+    max-width: 50%;
+    text-align: center;
+}
+.recent-pr-he span{
+    color: #F8B342;
+}
+.service-pg{
+    margin: 6rem;
+}
+.service-pg-banner{
+    background-image: url(./photosrc/service-pg-banner.jpg);
+}
+
+/* our team page starts here */
+.our-team-pg{
+    background-image: url(./photosrc/our-team-pg-banner.jpg);
+}
+.our-team-pg-header{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+.our-team-pg-header2{
+    width: fit-content;
+    margin: auto;
+}
+.team-pg-card-container{
+    gap: 4rem 0;
+}
+
+.price-container{
+    background-color: red;
+    height: 200px;
+    color: black;
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 
 
@@ -1048,7 +1131,6 @@ footer{
         align-items: center;
         gap: 4rem;
     }
-
 }
 @media (min-width:481px) and (max-width:768px){
     html{
