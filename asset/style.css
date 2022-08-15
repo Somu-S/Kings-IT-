@@ -10,7 +10,7 @@ html,body{
     overflow-x: hidden;
 }
 nav img{
-    height: 6rem;
+    height: 8rem;
 }
 nav,ul{
     display: flex;
@@ -26,8 +26,9 @@ nav{
     align-items: center;
     padding: 0 4rem;
     background-color: white;
-    /* position: fixed; */
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 .nav-ul{
     gap: 4rem;
@@ -55,7 +56,6 @@ nav{
     width: 15rem;
     padding: .5rem;
     gap: .2rem;
-    border-radius: 1rem;
     font-size: 1.2rem;
 }
 .search-field:hover{
@@ -64,24 +64,29 @@ nav{
 .fa-house{
     font-size: 1.6rem;
 }
-
 main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 4rem;
-    margin: 8rem 0;
+    padding: 8rem 4rem;
+    margin: 8rem 0 0 0;
+    background-image: linear-gradient(to right top, #f8b342, #d68643, #ab5f41, #794038, #462628, #462628, #462628, #462628, #794038, #ab5f41, #d68643, #f8b342);
 }
 main h1{
-    font-size: 3.5rem;
+    font-size: 3.9rem;
 }
 .banner-img img{
     height: auto;
     max-width: 50rem;
 }
 .banner-img{
-    background-color:rgba(248, 179, 66, 0.47);
-    border-radius: 56% 44% 65% 35% / 38% 45% 55% 62% ;
+    background-color: #f8b342;
+    border-radius: 60% 40% 67% 33% / 35% 68% 32% 65% ;
+    padding: 4rem;
+}
+.banner-content{
+    color: white;
+    max-width: 40%;
 }
 .banner-content span{
     color: #F8B342;
@@ -146,10 +151,10 @@ main h1{
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 28rem;
+    height: 100%;
     top: 0;
     right: 0;
-    background-color: #F8B342;
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 6rem;
@@ -158,10 +163,11 @@ main h1{
   .sidepanel a {
     padding: .8rem .8rem .8rem 3.2rem;
     text-decoration: none;
-    font-size: 1.6rem;
-    color: white;
+    font-size: 1.8rem;
+    color: #f8b342;
     display: block;
     transition: 0.3s;
+    margin: 5rem;
   }
 
   .sidepanel a:hover {
@@ -186,7 +192,7 @@ main h1{
     padding: 4rem 6rem;
     align-items: center;
     background-color: black;
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
 }
 .about-h{
     font-size: 3.2rem;
@@ -245,8 +251,6 @@ main h1{
 .ab-name span{
     font-weight: bold;
     font-size: 1.4rem;
-
-
 }
 /* about us part ends here */
 
@@ -259,6 +263,7 @@ main h1{
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    margin: 8rem 0;
 }
 .services-header{
     font-size: 1.6rem;
@@ -819,7 +824,8 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 12rem 0 6rem;
+    padding: 10rem;
+    margin-top: 8rem;
 }
 .c-banner-title,.contact-banner p{
     color: white;
@@ -1077,19 +1083,77 @@ footer{
     gap: 4rem 0;
 }
 
-.price-container{
-    background-color: red;
-    height: 200px;
-    color: black;
-}
+/* pricing starts here */
 
+.price-title{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.price-title i{
+    width: 4rem;
+    background-color: #f8b342;
+}
+.price-con-head{
+    font-size: 3.2rem;
+}
 .price-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 6rem;
 }
-
-
+.price-container p{
+    font-size: 1.2rem;
+    width: 50%;
+    text-align: center;
+}
+.price-card-header{
+    font-size: 3.2rem;
+    color: #f8b342;
+}
+.price{
+    font-size: 2.4rem;
+    color: white;
+}
+.price-card img{
+    height: 1.2rem;
+}
+.price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right top, #f8b342, #c87843, #8a493b, #462628, #000000);
+    padding: 6rem;
+    border-radius: 2rem;
+}
+.center-price-card{
+    background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000);
+}
+.price-feature-wrapper{
+    margin: 1rem 0;
+}
+.price-feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+.price-feature span{
+    font-size: 1.4rem;
+    color: white;
+}
+.price-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4rem;
+    padding: 4rem;
+}
+.pricing-pg-banner{
+    background-image: url(./photosrc/pricing-banner.jpg);
+    background-position: bottom;
+}
 
 
 
