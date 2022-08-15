@@ -208,6 +208,9 @@ main h1{
 .ab-card-wra,.ab-card{
     display: flex;
 }
+.ab-card p{
+    font-size: 1.2rem;
+}
 .ab-title{
     font-size: 1.4rem;
     font-weight: bold;
@@ -638,12 +641,12 @@ main h1{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 footer a,.footer-abt{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 footer a:hover{
     color: #F8B342;
@@ -754,7 +757,7 @@ footer{
 .why-title{
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     gap: .5rem;
 }
 .abt-line{
@@ -964,6 +967,48 @@ footer{
     font-size: 1.5rem;
     font-weight: 500;
 }
+.web-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+.web-card img{
+    height: 20rem;
+}
+.web-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.web-name{
+    background-color: black;
+    font-size: 1.4rem;
+    position: absolute;
+    text-align: center;
+    color: #F8B342;
+    padding: 2rem;
+}
+.web-name:hover{
+    background-color: #00DCA2;
+    color: black;
+    transition: 0.3s;
+}
+.web-name p{
+    font-size: 1.2rem;
+}
+.web-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+
+
 
 
 @media (max-width:768px){
