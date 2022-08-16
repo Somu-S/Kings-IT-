@@ -656,6 +656,10 @@ main h1{
     flex-direction: column;
     padding: 6rem;
 }
+.blog-container a{
+    text-decoration: none;
+    color: black;
+}
 .bl-title{
     display: flex;
     align-items: center;
@@ -674,6 +678,7 @@ main h1{
     font-size: 3.2rem;
 }
 .blog-img img{
+    width: 100%;
     height: 25rem;
 }
 .blog-container{
@@ -688,10 +693,6 @@ main h1{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-}
-.blog-card:hover{
-    background-color: #00DCA2;
-    transition: .3s;
     cursor: pointer;
 }
 .blog-content{
@@ -706,6 +707,11 @@ main h1{
 }
 .comment,.date,.profile{
     font-size: 1rem;
+}
+.comment{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
 }
 
 
@@ -1196,6 +1202,198 @@ footer{
 }
 
 
+/* blog-pg-banner starts here */
+.blog-pg-banner{
+    background-image: url(./photosrc/blogs-banner.jpg);
+}
+.blog-card p{
+    font-size: 1.4rem;
+    color: #f8b342;
+}
+.blog-pg-card{
+    display: flex;
+    align-items: center;
+}
+.blog-pg-card img{
+    height: 20rem;
+    width: 100%;
+}
+.blog-pg-title{
+    font-size: 1.8rem;
+    color: #f8b342;
+}
+.blog-pg-card-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4rem;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+.blog-line-card img{
+    height: 5rem;
+}
+.blog-pg-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+}
+.blog-search{
+    border: .1rem solid gray;
+    width: fit-content;
+    padding: .5rem;
+}
+.blog-search input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.blog-search i{
+    font-size: 1.4rem;
+}
+.most-read-title{
+    font-weight: 600;
+    color: #f8b342;
+    font-size: 1.8rem;
+}
+.blog-line p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid gray;
+}
+.blog-line-card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    max-width: 90%;
+}
+.blog-line{
+    padding: 2rem 4rem;
+}
+.blog-date{
+    font-size: 1rem;
+    color: gray;
+    margin-top: .4rem;
+}
+.span-date{
+    font-weight: 600;
+}
+.most-read{
+    margin: 2rem 0;
+}
+.feature-post{
+    margin: 2rem 0;
+}
+.categories{
+    background-color: #f8b342;
+    width: fit-content;
+    padding: .5rem .7rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.published-txt{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: .5rem;
+}
+.blog-detail-header{
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+.blog-detail-img img{
+    height: 40rem;
+    width: 100%;
+}
+.blog-content{
+    font-size: 1.2rem;
+}
+.blog-content h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.blog-detail{
+    max-width: 60%;
+}
+.user-comment{
+    display: flex;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+.user-comment img{
+    height: 5rem;
+}
+.commenter{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.comment-date{
+    font-size: .8rem;
+    color: gray;
+    margin-bottom: .2rem;
+}
+.comment-detail p{
+    font-size: 1.2rem;
+}
+.no-of-comment{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.reply{
+    font-size: 1rem;
+    outline: none;
+    border: .1rem solid gray;
+    background-color: white;
+    padding: .2rem 1rem;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+.comment-box-header{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.comment-txt{
+    font-size: 1rem ;
+    color: gray;
+    margin-top: 1rem;
+}
+.comment-input-fields input,.comment-input-fields textarea,.submit button{
+    outline: none;
+    border: .1rem solid gray;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+.comment-input-fields{
+    display: flex;
+    gap: 1rem;
+}
+.comment-input-fields textarea{
+    height: 10rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+.comment-input-wrapper{
+    width: fit-content;
+    margin: 1rem 0;
+}
+.submit button{
+    border-radius: 1rem;
+    background-color: #3D2C11;
+    color: white;
+    padding: .7rem;
+}
+.submit button:hover{
+    background-color: #00DCA2;
+    transition: .3s;
+}
+
+
 
 
 @media (max-width:768px){
@@ -1208,7 +1406,7 @@ footer{
     .btn{
         display: block;
     }
-    .about-us,.our-work,.abt-pg-main,.contact-form-container{
+    .about-us,.our-work,.abt-pg-main,.contact-form-container,.blog-pg-container{
         flex-direction: column;
     }
     .recent-project{
@@ -1248,6 +1446,9 @@ footer{
     }
     .contact-content-wrapper{
         display: flex;
+    }
+    .blog-pg-container{
+        flex-direction: row;
     }
 }
 @media (min-width:769px) and (max-width:1024px){
