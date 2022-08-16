@@ -26,9 +26,39 @@ nav{
     align-items: center;
     padding: 0 4rem;
     background-color: white;
-    width: 100%;
+}
+.whole-nav-wrapper,nav{
     position: fixed;
-    top: 0;
+    background-color: white;
+    width: 100%;
+}
+.nav-detail{
+    display: flex;
+    gap: 2rem;
+}
+.nav-contacts{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+.nav-media{
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-media i{
+    color: #f8b342;
+}
+.nav-phone{
+    display: flex;
+    font-size: 1rem;
+    gap: .5rem;
+    align-items: center;
+}
+.nav-phone img{
+    height: 2rem;
 }
 .nav-ul{
     gap: 4rem;
@@ -68,7 +98,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8rem 4rem;
+    padding: 5rem 4rem;
     margin: 8rem 0 0 0;
     background-image: linear-gradient(to right top, #f8b342, #d68643, #ab5f41, #794038, #462628, #462628, #462628, #462628, #794038, #ab5f41, #d68643, #f8b342);
 }
@@ -99,8 +129,8 @@ main h1{
     font-weight: bold;
 }
 .banner-content input{
-    font-size: 1rem;
-    background-color: #F8B342;
+    font-size: 1.4rem;
+    background-color: #3D2C11;
     border: none;
     outline: none;
     padding: 1rem 2rem;
@@ -126,7 +156,7 @@ main h1{
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #00DCA2;
+    background-color: black;
     min-width: 10rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -189,15 +219,15 @@ main h1{
 /* about us part starts here */
 .about-us{
     display: flex;
-    padding: 4rem 6rem;
+    padding: 8rem 6rem;
     align-items: center;
     background-color: black;
-    /* margin: 4rem 0; */
 }
 .about-h{
     font-size: 3.2rem;
     font-weight: bold;
     color: white;
+    margin: 1rem 0;
 }
 .about-us p{
     font-size: 1.2rem;
@@ -205,7 +235,7 @@ main h1{
     color: white;
 }
 .ab-card-wra{
-    margin: 1rem 0;
+    margin: 2rem 0;
     color: #F8B342;
 }
 .about-content p{
@@ -280,11 +310,11 @@ main h1{
     height: 10rem;
 }
 .ser-card-title{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .ser-card p,.read-btn input{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 .read-btn input{
@@ -307,13 +337,13 @@ main h1{
     background-image: linear-gradient(to right top, #f8b342, #d68643, #ab5f41, #794038, #462628, #462628, #462628, #462628, #794038, #ab5f41, #d68643, #f8b342);
     transition: .5s;
     color: white;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 .ser-cards-container{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     margin-top: 2rem;
 }
 /* services ends here */
@@ -572,6 +602,7 @@ main h1{
 }
 .shadow .tes-name{
     color: white;
+    font-weight: 600;
 }
 .shadow .tes-comment{
     color: black;
@@ -611,6 +642,7 @@ main h1{
 .contact-btn button:hover{
     background-color:  #00DCA2;
     transition: 0.3s;
+    cursor: pointer;
 }
 .it-content{
     padding-left: 6rem;
@@ -656,6 +688,14 @@ main h1{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+.blog-card:hover{
+    background-color: #00DCA2;
+    transition: .3s;
+    cursor: pointer;
+}
+.blog-content{
+    padding: .5rem;
 }
 .blog i{
     color: #F8B342;

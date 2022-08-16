@@ -10,51 +10,66 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
-        <img src="asset/photosrc/logo.png" alt="Check your internet connection">
-        <ul class="nav-ul">
-            <li><a href="index.html"><i class="fa-solid fa-house active"></i></a></li>
-            <li><a href="about.html">About us</a></li>
-            <li class="home nav-li dropdown-btn">
-                <a href="services.html">Our Services</a>
-                <div class="dropdown-content">
-                    <a href="appdev.html">Mobile App Development</a>
-                    <a href="content.html">Content Writing</a>
-                    <a href="Graphic.html">Graphic Designing</a>
-                    <a href="webdev.html">Web Development</a>
-                    <a href="seo.html">SEO(Search Engine Optimization</a>
-                    <a href="marketing.html">Social Media Mareketing</a>
+    <div class="whole-nav-wrapper">
+        <div class="nav-contacts">
+            <div class="nav-detail">
+                <div class="nav-phone">
+                    <img src="asset/photosrc/nav-phone.png" >
+                    98********
                 </div>
-           </li>
-            <li><a href="price.html">Pricing</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="ourteam.html">Our Team</a></li>
-        </ul>
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="index.html">Home</a>
-            <a href="aboutus.html">About</a>
-            <a href="services.html">Our Services</a>
-            <a href="contact.html">Our Contacts</a>
-            <a href="our-team.html">Our Team</a>
-            <a href="our-team.html">Pricing</a>
-          </div>
-          <div class="bar-search">
-              <div class="btn">
-                <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars home"></i></button>
+                <div class="nav-phone">
+                    <img src="asset/photosrc/nav-email.png">
+                    lorem@gmail.com
+                </div>
             </div>
-            <div class="search-field">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search..">
-            </div>
-            <div class="social-media footer-media">
+            <div class="social-media nav-media">
+            <span>Follow us in our social media | </span>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
             </div>
-          </div>
-    </nav>
+        </div>
+
+        <nav>
+            <img src="asset/photosrc/logo.png" alt="Check your internet connection">
+            <ul class="nav-ul">
+                <li><a href="index.html"><i class="fa-solid fa-house active"></i></a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="home nav-li dropdown-btn">
+                    <a href="services.html">Our Services</a>
+                    <div class="dropdown-content">
+                        <a href="appdev.html">Mobile App Development</a>
+                        <a href="content.html">Content Writing</a>
+                        <a href="Graphic.html">Graphic Designing</a>
+                        <a href="webdev.html">Web Development</a>
+                        <a href="seo.html">SEO(Search Engine Optimization</a>
+                        <a href="marketing.html">Social Media Mareketing</a>
+                    </div>
+               </li>
+                <li><a href="price.html">Pricing</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
+            </ul>
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Our Contacts</a>
+                <a href="our-team.html">Our Team</a>
+                <a href="our-team.html">Pricing</a>
+              </div>
+              <div class="bar-search">
+                  <div class="btn">
+                    <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars home"></i></button>
+                </div>
+                <div class="search-field">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search..">
+                </div>
+              </div>
+        </nav>
+    </div>
 
     <main>
         <div class="banner-content">
@@ -294,7 +309,7 @@
                 </div>
             </div>
             <div class="our-team-btn">
-                <a href="##"><button>View All Members</button></a>
+                <a href="ourteam.html"><button>View All Members</button></a>
             </div>
         </div>
         <div class="team-card-container">
@@ -409,7 +424,9 @@
             <div class="it-header">Solve your It needs today</div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, voluptatibus sapiente. Maxime ipsa perferendis possimus placeat id rerum quisquam non.</p>
             <div class="contact-btn">
-                <button>Contact us</button>
+                <a href="contactus.html">
+                    <button>Contact us</button>
+                </a>
             </div>
         </div>
     </div>
@@ -426,35 +443,39 @@
                 <div class="blog-img">
                     <img src="asset/photosrc/team1.jpg">
                 </div>
-                <div class="date">
-                    <i class="fa-solid fa-calendar"></i> February-09-31
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
-                <div class="comment-profile">
-                    <div class="comment">
-                        <i class="fa-solid fa-comment"></i>10 comments
+                <div class="blog-content">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar"></i> February-09-31
                     </div>
-                    <div class="profile">
-                        <i class="fa-solid fa-user"></i>
-                        John Cena
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
+                    <div class="comment-profile">
+                        <div class="comment">
+                            <i class="fa-solid fa-comment"></i>10 comments
+                        </div>
+                        <div class="profile">
+                            <i class="fa-solid fa-user"></i>
+                            John Cena
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="blog-card">
                 <div class="blog-img">
-                    <img src="asset/photosrc/team4.jpg">
+                    <img src="asset/photosrc/team2.jpg">
                 </div>
-                <div class="date">
-                    <i class="fa-solid fa-calendar"></i> February-09-31
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
-                <div class="comment-profile">
-                    <div class="comment">
-                        <i class="fa-solid fa-comment"></i>10 comments
+                <div class="blog-content">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar"></i> February-09-31
                     </div>
-                    <div class="profile">
-                        <i class="fa-solid fa-user"></i>
-                        John Cena
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
+                    <div class="comment-profile">
+                        <div class="comment">
+                            <i class="fa-solid fa-comment"></i>10 comments
+                        </div>
+                        <div class="profile">
+                            <i class="fa-solid fa-user"></i>
+                            John Cena
+                        </div>
                     </div>
                 </div>
             </div>
@@ -462,17 +483,19 @@
                 <div class="blog-img">
                     <img src="asset/photosrc/team3.jpg">
                 </div>
-                <div class="date">
-                    <i class="fa-solid fa-calendar"></i> February-09-31
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
-                <div class="comment-profile">
-                    <div class="comment">
-                        <i class="fa-solid fa-comment"></i>10 comments
+                <div class="blog-content">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar"></i> February-09-31
                     </div>
-                    <div class="profile">
-                        <i class="fa-solid fa-user"></i>
-                        John Cena
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, non?</p>
+                    <div class="comment-profile">
+                        <div class="comment">
+                            <i class="fa-solid fa-comment"></i>10 comments
+                        </div>
+                        <div class="profile">
+                            <i class="fa-solid fa-user"></i>
+                            John Cena
+                        </div>
                     </div>
                 </div>
             </div>
