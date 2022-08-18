@@ -1208,7 +1208,9 @@ footer{
 }
 .blog-card p{
     font-size: 1.4rem;
-    color: #f8b342;
+    padding: 1rem 0;
+    font-weight: 600;
+    color: rgb(58, 52, 52);
 }
 .blog-pg-card{
     display: flex;
@@ -1277,6 +1279,9 @@ footer{
     color: gray;
     margin-top: .4rem;
 }
+.blog-content i{
+    color: #f8b342;
+}
 .span-date{
     font-weight: 600;
 }
@@ -1310,6 +1315,12 @@ footer{
 }
 .blog-content{
     font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+}
+.blog-pg-card-container a{
+    color: black;
 }
 .blog-content h3{
     font-size: 2.8rem;
