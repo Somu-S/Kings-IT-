@@ -1128,6 +1128,9 @@ footer{
 .team-pg-card-container{
     gap: 4rem 0;
 }
+.our-team i{
+    color: #f8b342;
+}
 
 /* pricing starts here */
 
