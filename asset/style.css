@@ -53,7 +53,7 @@ nav{
 }
 .nav-phone{
     display: flex;
-    font-size: 1rem;
+    font-size: 1.4rem;
     gap: .5rem;
     align-items: center;
 }
